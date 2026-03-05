@@ -22,4 +22,44 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.remove('text-slate-600', 'dark:text-slate-300');
         }
     });
+
+    // Sticky Header & Scroll-to-top logic
+    const header = document.getElementById('main-header');
+    const scrollTopBtn = document.getElementById('scroll-to-top');
+
+    const handleScroll = () => {
+        if (window.scrollY > 50) {
+            // Header solid
+            if (header) {
+                header.classList.add('bg-white', 'dark:bg-background-dark', 'shadow-md');
+                header.classList.remove('bg-white/5', 'dark:bg-black/20', 'backdrop-blur-sm');
+            }
+            // Show scroll to top
+            if (scrollTopBtn) {
+                scrollTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                scrollTopBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+            }
+        } else {
+            // Header transparent
+            if (header) {
+                header.classList.remove('bg-white', 'dark:bg-background-dark', 'shadow-md');
+                header.classList.add('bg-white/5', 'dark:bg-black/20', 'backdrop-blur-sm');
+            }
+            // Hide scroll to top
+            if (scrollTopBtn) {
+                scrollTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                scrollTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+            }
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    // Trigger once on load
+    handleScroll();
+
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 });

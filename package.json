@@ -1,0 +1,13 @@
+{
+  "name": "makers-engineering-static",
+  "version": "1.0.0",
+  "description": "A static construction and engineering firm website built with pure HTML, CSS, and JavaScript.",
+  "scripts": {
+    "start": "http-server . -p 3000",
+    "build": "echo 'No build step required for static site'",
+    "lint": "echo 'No linting required for static site'"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

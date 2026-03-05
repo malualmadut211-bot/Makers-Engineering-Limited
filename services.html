@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makers Engineering - Services</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E0A000',
+                        'background-light': '#f8f8f5',
+                        'background-dark': '#231d0f',
+                    },
+                    fontFamily: {
+                        display: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
+    
+    <!-- Header -->
+    <header class="flex flex-wrap items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 md:px-10 py-4 bg-white/5 dark:bg-black/20 backdrop-blur-sm sticky top-0 z-50 w-full">
+        <div class="flex items-center gap-4 text-slate-900 dark:text-white">
+            <div class="w-6 h-6 text-primary">
+                <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
+            <a href="./index.html" class="text-lg font-bold leading-tight tracking-[-0.015em] uppercase">Makers Engineering</a>
+        </div>
+        <div class="flex flex-1 justify-end gap-8 items-center mt-4 md:mt-0">
+            <nav class="hidden md:flex items-center gap-9">
+                <a href="./index.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Home</a>
+                <a href="./about.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">About Us</a>
+                <a href="./services.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Services</a>
+                <a href="./projects.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Projects</a>
+                <a href="./contact.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Contact</a>
+            </nav>
+            <a href="./contact.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors uppercase">
+                <span class="truncate">Get a Quote</span>
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-900 dark:text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-black w-full px-4 py-4 border-b border-primary/20 absolute top-[73px] z-40">
+        <nav class="flex flex-col gap-4">
+            <a href="./index.html" class="text-base font-medium text-slate-900 dark:text-white">Home</a>
+            <a href="./about.html" class="text-base font-medium text-slate-900 dark:text-white">About Us</a>
+            <a href="./services.html" class="text-base font-medium text-slate-900 dark:text-white">Services</a>
+            <a href="./projects.html" class="text-base font-medium text-slate-900 dark:text-white">Projects</a>
+            <a href="./contact.html" class="text-base font-medium text-slate-900 dark:text-white">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-1 w-full flex flex-col">
+        <div class="w-full mb-12">
+            <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8 md:p-16 relative overflow-hidden" style="background-image: linear-gradient(rgba(35, 29, 15, 0.7), rgba(35, 29, 15, 0.9)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbTIafR-m8P56TnDDUqSsdm6ZvsKK6jacJ-tiv3g8_DwNKBBrznik6xh1zyg4oBG-NGDOMlfaZVvB020inLpGLYC8q28gMtCjy9H7nnRRJSj5ypUYe_IdoNBkOrY_50qFTSnGsd-27nBJaWC0kNTwz6xvFvwMacIAZBFfchggTCjV8oxPOtXfePkfzQgg5SORfBk7nt5j4QYkCR9cjzLWd8utJGB2Y5a9BJo7SXK77qxnX_2336krS4goDjsQW14mduBg2GedpNhtc')">
+                <div class="flex flex-col gap-4 text-center z-10 max-w-3xl">
+                    <div class="text-primary text-sm font-semibold tracking-wider uppercase mb-2">Home &gt; Services</div>
+                    <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl lg:text-6xl">
+                        Our Services
+                    </h1>
+                    <p class="text-slate-200 text-lg md:text-xl font-normal leading-relaxed">
+                        Comprehensive Construction &amp; Engineering Solutions
+                    </p>
+                </div>
+                <a href="./contact.html" class="z-10 mt-4 flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors shadow-lg">
+                    <span class="truncate">Get a Quote</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-20 px-4 md:px-10 py-10 w-full">
+            <!-- Service 1 -->
+            <div class="flex flex-col lg:flex-row gap-10 items-center">
+                <div class="w-full lg:w-1/2 aspect-[4/3] bg-cover bg-center rounded-xl shadow-2xl relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAobgzCls4A9RPeLc5zPplxunN1WF0gFRihFG3F4mEGSoGkNjZHY-S2e58Ar5xN19DdLSJdDwOCIa66Va6eHCag5FzDZtGsAkEnwOwNlaxpV2OhzozfCkbupq-n6tLNNFRQOL5a4a0RQWkYeefBQNzwG6AEdhhNusXvVZ1xWuGKGN4vvCKgLnEjboF1i3C9YCRdqX9lr5azJHDxGuQVJR11wBxDSMj1D3cxmFz7KAskQju0hhkHuUPMwEtCntY7ajplhtR027tgfI7Z')">
+                    <div class="absolute -bottom-6 -right-6 bg-primary text-background-dark p-4 rounded-lg shadow-xl hidden md:block">
+                        <span class="material-symbols-outlined" style="font-size: 48px;">apartment</span>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col gap-6">
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">Building Construction</h2>
+                    <p class="text-lg opacity-80 leading-relaxed">We offer comprehensive building construction services, delivering high-quality residential, commercial, and industrial projects on time and within budget.</p>
+                    <ul class="flex flex-col gap-4 mt-2">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Home building</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Commercial construction</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Institutional projects</h3></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="flex flex-col lg:flex-row-reverse gap-10 items-center">
+                <div class="w-full lg:w-1/2 aspect-[4/3] bg-cover bg-center rounded-xl shadow-2xl relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZwx7WLef-F3Z4O26I1NysAJh3topIWLTgfG8BZMISlk5QAC8Z8FkfofWHr0GSy30iR_3c6EATQg61EPhcMWTL-VqgfcxfaypXUBS-CX7N3Frfe_5Ha8YBuCaA58y8bmKsudoMp80_ZOGd30Lg7AIW98LPL1eP18bN6vZsXezCSUue4DLvYCFtr4DwH0N5DVlGrsy52qOU7hh6nnxbJs6Mhi5dBtP92OxmA5X8ZunwYE1-HyER4U1OSajXJQ4LamljhweIaPwDlQtz')">
+                    <div class="absolute -bottom-6 -left-6 bg-primary text-background-dark p-4 rounded-lg shadow-xl hidden md:block">
+                        <span class="material-symbols-outlined" style="font-size: 48px;">add_road</span>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col gap-6">
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">Roads & Bridges</h2>
+                    <p class="text-lg opacity-80 leading-relaxed">Our expertise in infrastructure development includes the construction and maintenance of roads, highways, and bridges, ensuring safe and efficient transportation networks.</p>
+                    <ul class="flex flex-col gap-4 mt-2">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Road construction</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Bridge engineering</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Highway infrastructure</h3></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="flex flex-col lg:flex-row gap-10 items-center">
+                <div class="w-full lg:w-1/2 aspect-[4/3] bg-cover bg-center rounded-xl shadow-2xl relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiEVAtDJ_hN_QOCqRZoYJwWPrUY0yx6kpvcYixQ5Lkn8CQWwzhWuvktmyIvhqKKHiP-MIulNBoHoNA6qbQU0SiHf1aHm9QhibqPCLvKLpdLFKCK71llBitbRdX1qGDhYzKABzUPvwaQYEyi65097dpNBldLZLG08FiL7pxWatNP87V6zsDSVXK8ioN5aklngTfVmJVzHoYPzpMFfFXXrSdJViE6Yjue-YwdIDGOC2_HyF53HzPLl76_BjtU0EknbBhTh_jCqKZz7FO')">
+                    <div class="absolute -bottom-6 -right-6 bg-primary text-background-dark p-4 rounded-lg shadow-xl hidden md:block">
+                        <span class="material-symbols-outlined" style="font-size: 48px;">architecture</span>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col gap-6">
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">Architectural & Interior Design</h2>
+                    <p class="text-lg opacity-80 leading-relaxed">Our architectural design team creates innovative and functional spaces that meet the unique needs of our clients while adhering to the highest aesthetic and structural standards.</p>
+                    <ul class="flex flex-col gap-4 mt-2">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Architectural design</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Interior design</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Exterior design</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Blueprint creation</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">3D rendering</h3></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="flex flex-col lg:flex-row-reverse gap-10 items-center">
+                <div class="w-full lg:w-1/2 aspect-[4/3] bg-cover bg-center rounded-xl shadow-2xl relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0xGAA9tb9L9ozJ0_plm3dzuhIgryK7BCM5CdSkFVhvEx2rteo8Z38IvWpHUMGNOk6gQLKqka0ZWhambKezp-WMGO5V4SMELhV1rBaWkkjh4WjjTwSyD2FjIwz8SiYJ05zdjYDIBj1_GcoLn78MB_fxPtr4c8DRSXFwIvvaBxuduyKcz40lMdtyRQLPByoI2QTTvQJR1cUS4iOP5aBwWZNXmV-2AE2pBCDLb-KBbNkSCy0fJPdDiaADLJXw-aXI2M4CFRjXrbeqTRm')">
+                    <div class="absolute -bottom-6 -left-6 bg-primary text-background-dark p-4 rounded-lg shadow-xl hidden md:block">
+                        <span class="material-symbols-outlined" style="font-size: 48px;">handyman</span>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col gap-6">
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">Renovations & Remodeling</h2>
+                    <p class="text-lg opacity-80 leading-relaxed">Transform existing spaces with our top-tier renovation and remodeling services, enhancing functionality and aesthetics for residential and commercial properties.</p>
+                    <ul class="flex flex-col gap-4 mt-2">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Home renovation</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Commercial remodeling</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Structural upgrades</h3></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                            <div><h3 class="font-bold text-lg">Painting</h3></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 mb-20 flex flex-col items-center justify-center gap-6 text-center">
+                <h3 class="text-2xl md:text-3xl font-bold">Have a project in mind? Let's discuss how we can help.</h3>
+                <a href="./contact.html" class="flex min-w-[200px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl h-14 px-8 bg-primary text-background-dark text-lg font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200">
+                    <span class="material-symbols-outlined">description</span>
+                    <span class="truncate">Request a Quote</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#050505] border-t border-primary/20 pt-16 pb-8 mt-auto w-full">
+        <div class="w-full px-4 md:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-8 h-8 text-primary">
+                            <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white text-2xl font-black leading-tight tracking-[-0.015em] uppercase">Makers Engineering</h2>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
+                        Premium construction and engineering firm delivering excellence across South Sudan. Building the foundation for a stronger tomorrow.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">public</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors" href="#">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold uppercase mb-6 border-b border-primary/30 inline-block pb-1">Quick Links</h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="text-slate-400 hover:text-primary text-sm transition-colors flex items-center gap-2" href="./about.html"><span class="material-symbols-outlined text-xs">chevron_right</span> About Us</a></li>
+                        <li><a class="text-slate-400 hover:text-primary text-sm transition-colors flex items-center gap-2" href="./services.html"><span class="material-symbols-outlined text-xs">chevron_right</span> Services</a></li>
+                        <li><a class="text-slate-400 hover:text-primary text-sm transition-colors flex items-center gap-2" href="./projects.html"><span class="material-symbols-outlined text-xs">chevron_right</span> Projects</a></li>
+                        <li><a class="text-slate-400 hover:text-primary text-sm transition-colors flex items-center gap-2" href="./contact.html"><span class="material-symbols-outlined text-xs">chevron_right</span> Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold uppercase mb-6 border-b border-primary/30 inline-block pb-1">Contact Us</h3>
+                    <ul class="flex flex-col gap-4">
+                        <li class="flex items-start gap-3 text-slate-400 text-sm">
+                            <span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+                            <span>Makers Tower, 4th Floor<br />Hai Malakal, Juba<br />South Sudan</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-400 text-sm">
+                            <span class="material-symbols-outlined text-primary">phone</span>
+                            <span>+211 912 345 678</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-400 text-sm">
+                            <span class="material-symbols-outlined text-primary">mail</span>
+                            <span>info@makersengineering.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-500 text-xs text-center md:text-left">
+                    © 2023 Makers Engineering Limited. All rights reserved.
+                </p>
+                <div class="flex gap-4">
+                    <a class="text-slate-500 hover:text-white text-xs transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-slate-500 hover:text-white text-xs transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

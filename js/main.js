@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const linkPath = link.getAttribute('href').replace('./', '/');
         if (currentPath.endsWith(linkPath) || (currentPath.endsWith('/') && linkPath === '/index.html')) {
             link.classList.add('text-primary', 'border-b-2', 'border-primary');
-            link.classList.remove('text-slate-600', 'dark:text-slate-300');
+            link.classList.remove('text-slate-300', 'text-white');
         }
     });
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Header solid
             if (header) {
                 header.classList.add('bg-[#14120A]/90', 'shadow-md');
-                header.classList.remove('bg-white/5', 'dark:bg-black/20', 'backdrop-blur-sm');
+                header.classList.remove('bg-white/5', 'backdrop-blur-sm');
             }
             // Show scroll to top
             if (scrollTopBtn) {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Header transparent
             if (header) {
                 header.classList.remove('bg-[#14120A]/90', 'shadow-md');
-                header.classList.add('bg-white/5', 'dark:bg-black/20', 'backdrop-blur-sm');
+                header.classList.add('bg-white/5', 'backdrop-blur-sm');
             }
             // Hide scroll to top
             if (scrollTopBtn) {

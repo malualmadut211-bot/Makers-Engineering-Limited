@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.scrollY > 50) {
             // Header solid
             if (header) {
-                header.classList.add('bg-white', 'dark:bg-background-dark', 'shadow-md');
+                header.classList.add('bg-[#14120A]/90', 'shadow-md');
                 header.classList.remove('bg-white/5', 'dark:bg-black/20', 'backdrop-blur-sm');
             }
             // Show scroll to top
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Header transparent
             if (header) {
-                header.classList.remove('bg-white', 'dark:bg-background-dark', 'shadow-md');
+                header.classList.remove('bg-[#14120A]/90', 'shadow-md');
                 header.classList.add('bg-white/5', 'dark:bg-black/20', 'backdrop-blur-sm');
             }
             // Hide scroll to top

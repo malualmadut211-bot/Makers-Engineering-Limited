@@ -24,11 +24,11 @@
         }
     </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
+<body class="bg-[#14120A] font-display text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
     
     <!-- Header -->
     <header id="main-header" class="flex flex-wrap items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 md:px-10 py-4 bg-white/5 dark:bg-black/20 backdrop-blur-sm sticky top-0 z-50 w-full transition-all duration-300">
-        <div class="flex items-center gap-4 text-slate-900 dark:text-white">
+        <div class="flex items-center gap-4 text-white">
             <div class="w-6 h-6 text-primary">
                 <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill-rule="evenodd"></path>
@@ -38,34 +38,35 @@
         </div>
         <div class="flex flex-1 justify-end gap-8 items-center mt-4 md:mt-0">
             <nav class="hidden md:flex items-center gap-9">
-                <a href="./index.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Home</a>
-                <a href="./about.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">About Us</a>
-                <a href="./services.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Services</a>
-                <a href="./projects.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Projects</a>
-                <a href="./contact.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Contact</a>
+                <a href="./index.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Home</a>
+                <a href="./about.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">About Us</a>
+                <a href="./services.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Services</a>
+                <a href="./projects.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Projects</a>
+                <a href="./contact.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Contact</a>
             </nav>
             <a href="./contact.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors uppercase">
                 <span class="truncate">Get a Quote</span>
             </a>
-            <button id="mobile-menu-btn" class="md:hidden text-slate-900 dark:text-white">
+            <button id="mobile-menu-btn" class="md:hidden text-white">
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
         </div>
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-black w-full px-4 py-4 border-b border-primary/20 absolute top-[73px] z-40">
+    <div id="mobile-menu" class="hidden md:hidden bg-[#14120A] w-full px-4 py-4 border-b border-primary/20 absolute top-[73px] z-40">
         <nav class="flex flex-col gap-4">
-            <a href="./index.html" class="text-base font-medium text-slate-900 dark:text-white">Home</a>
-            <a href="./about.html" class="text-base font-medium text-slate-900 dark:text-white">About Us</a>
-            <a href="./services.html" class="text-base font-medium text-slate-900 dark:text-white">Services</a>
-            <a href="./projects.html" class="text-base font-medium text-slate-900 dark:text-white">Projects</a>
-            <a href="./contact.html" class="text-base font-medium text-slate-900 dark:text-white">Contact</a>
+            <a href="./index.html" class="text-base font-medium text-white">Home</a>
+            <a href="./about.html" class="text-base font-medium text-white">About Us</a>
+            <a href="./services.html" class="text-base font-medium text-white">Services</a>
+            <a href="./projects.html" class="text-base font-medium text-white">Projects</a>
+            <a href="./contact.html" class="text-base font-medium text-white">Contact</a>
         </nav>
     </div>
 
     <!-- Main Content -->
     <main class="flex-1 w-full flex flex-col">
+        <!-- Hero Section -->
         <div class="w-full mb-12">
             <div class="flex min-h-[600px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8 md:p-16 relative overflow-hidden" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuArfNsQPkf3No_TFgo96C-QFeCLZAkrYdJv-UoG1VQhjecFG8hHJa1KxnUw5awDpdut2MlbqV1bBV9wElcvbtu06WggcjbfW5mpdN5WMPgX3EwU3JXcUAZC9S9tmbG6D1kDz94k4zuthXF5gGoYmKzBJLJYSeIDH4UrarYBp6Wn1Svf4nupBingKRFtWXbsN2y6whr9hnAKE86KJs2yXw1oNFArZRyMWaz80Tvb2zUfZmAEYFdx6ZxwbQiAv218xjmd80zy9PKpV956')">
                 <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
@@ -94,14 +95,15 @@
             </div>
         </div>
 
-        <section class="py-16 px-4 md:px-10 border-t border-primary/10">
+        <!-- Who We Are Section -->
+        <section class="py-16 px-4 md:px-10 max-w-7xl mx-auto w-full">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="flex flex-col gap-6">
                     <div class="flex items-center gap-2">
                         <div class="h-1 w-10 bg-primary"></div>
                         <span class="text-primary font-bold tracking-widest uppercase text-sm">Who We Are</span>
                     </div>
-                    <h2 class="text-3xl md:text-5xl font-black leading-tight text-slate-900 dark:text-white uppercase">
+                    <h2 class="text-4xl md:text-5xl font-black leading-tight text-slate-900 dark:text-white uppercase">
                         Building excellence <br /><span class="text-primary">from the ground up</span>
                     </h2>
                     <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
@@ -124,59 +126,225 @@
             </div>
         </section>
 
-        <section class="py-16 px-4 md:px-10 border-t border-primary/10">
-            <div class="flex flex-col gap-4 text-center items-center mb-12">
+        <!-- Core Services Section -->
+        <section class="py-24 px-4 md:px-10 max-w-7xl mx-auto w-full">
+            <div class="flex flex-col gap-4 text-center items-center mb-16">
                 <div class="flex items-center gap-2">
                     <div class="h-1 w-10 bg-primary"></div>
                     <span class="text-primary font-bold tracking-widest uppercase text-sm">What We Do</span>
                     <div class="h-1 w-10 bg-primary"></div>
                 </div>
-                <h2 class="text-slate-900 dark:text-white tracking-tight text-3xl font-black leading-tight md:text-4xl uppercase max-w-2xl">
+                <h2 class="text-slate-900 dark:text-white tracking-tight text-4xl font-black leading-tight md:text-5xl uppercase max-w-2xl">
                     Core Services
                 </h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Service Items -->
-                <div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-white dark:bg-black/40 p-8 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
-                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-2">
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 bg-[#1A160D] p-10 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
+                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center">
                         <span class="material-symbols-outlined text-4xl">domain</span>
                     </div>
-                    <h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight uppercase">Building Construction</h3>
+                    <h3 class="text-white text-xl font-bold leading-tight uppercase">Building Construction</h3>
                 </div>
-                <div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-white dark:bg-black/40 p-8 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
-                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-2">
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 bg-[#1A160D] p-10 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
+                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center">
                         <span class="material-symbols-outlined text-4xl">add_road</span>
                     </div>
-                    <h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight uppercase">Roads & Bridges</h3>
+                    <h3 class="text-white text-xl font-bold leading-tight uppercase">Roads & Bridges</h3>
                 </div>
-                <div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-white dark:bg-black/40 p-8 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
-                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-2">
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 bg-[#1A160D] p-10 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
+                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center">
                         <span class="material-symbols-outlined text-4xl">architecture</span>
                     </div>
-                    <h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight uppercase">Architectural Design</h3>
+                    <h3 class="text-white text-xl font-bold leading-tight uppercase">Architectural Design</h3>
                 </div>
-                <div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-white dark:bg-black/40 p-8 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
-                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-2">
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 bg-[#1A160D] p-10 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
+                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center">
                         <span class="material-symbols-outlined text-4xl">home</span>
                     </div>
-                    <h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight uppercase">Interior & Exterior Design</h3>
+                    <h3 class="text-white text-xl font-bold leading-tight uppercase">Interior & Exterior Design</h3>
                 </div>
-                <div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-white dark:bg-black/40 p-8 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
-                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-2">
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 bg-[#1A160D] p-10 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
+                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center">
                         <span class="material-symbols-outlined text-4xl">handyman</span>
                     </div>
-                    <h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight uppercase">Renovations</h3>
+                    <h3 class="text-white text-xl font-bold leading-tight uppercase">Renovations</h3>
                 </div>
-                <div class="flex flex-col gap-4 rounded-xl border border-primary/20 bg-white dark:bg-black/40 p-8 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
-                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-2">
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 bg-[#1A160D] p-10 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
+                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center">
                         <span class="material-symbols-outlined text-4xl">assignment</span>
                     </div>
-                    <h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight uppercase">Project Management</h3>
+                    <h3 class="text-white text-xl font-bold leading-tight uppercase">Project Management</h3>
+                </div>
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 bg-[#1A160D] p-10 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
+                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center">
+                        <span class="material-symbols-outlined text-4xl">build</span>
+                    </div>
+                    <h3 class="text-white text-xl font-bold leading-tight uppercase">Maintenance</h3>
+                </div>
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 bg-[#1A160D] p-10 hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-black/5">
+                    <div class="text-primary bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center">
+                        <span class="material-symbols-outlined text-4xl">inventory_2</span>
+                    </div>
+                    <h3 class="text-white text-xl font-bold leading-tight uppercase">Supply of Materials</h3>
                 </div>
             </div>
         </section>
 
-        <section class="py-16 px-4 md:px-10 border-t border-primary/10">
+        <!-- Why Choose Us Section -->
+        <section class="py-24 px-4 md:px-10 max-w-7xl mx-auto w-full">
+            <div class="bg-[#1A160D] rounded-2xl border border-primary/20 p-8 md:p-16">
+                <div class="flex flex-col gap-4 text-center items-center mb-16">
+                    <div class="flex items-center gap-2">
+                        <div class="h-1 w-10 bg-primary"></div>
+                        <span class="text-primary font-bold tracking-widest uppercase text-sm">Our Advantage</span>
+                        <div class="h-1 w-10 bg-primary"></div>
+                    </div>
+                    <h2 class="text-white tracking-tight text-3xl font-black leading-tight md:text-4xl uppercase max-w-3xl">
+                        Why Choose Makers Engineering
+                    </h2>
+                    <p class="text-slate-400 text-lg max-w-2xl mt-4">
+                        We don't just build structures; we build trust. Our commitment to excellence sets us apart in the industry.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="flex flex-col gap-4 bg-black/40 p-8 rounded-xl border border-primary/10">
+                        <div class="text-primary bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined text-2xl">engineering</span>
+                        </div>
+                        <h3 class="text-white text-lg font-bold uppercase">Experienced Professionals</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Highly skilled engineers, architects, and project managers dedicated to perfection.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 bg-black/40 p-8 rounded-xl border border-primary/10">
+                        <div class="text-primary bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined text-2xl">verified</span>
+                        </div>
+                        <h3 class="text-white text-lg font-bold uppercase">Quality Guaranteed</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Sourcing only premium grade materials to ensure structural integrity and longevity.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 bg-black/40 p-8 rounded-xl border border-primary/10">
+                        <div class="text-primary bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined text-2xl">schedule</span>
+                        </div>
+                        <h3 class="text-white text-lg font-bold uppercase">On-Time Delivery</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Rigorous project management ensuring deadlines are respected without compromising quality.</p>
+                    </div>
+                    <div class="flex flex-col gap-4 bg-black/40 p-8 rounded-xl border border-primary/10">
+                        <div class="text-primary bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined text-2xl">eco</span>
+                        </div>
+                        <h3 class="text-white text-lg font-bold uppercase">Sustainable Practices</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Integrating modern engineering techniques and sustainable design practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-12 px-4 md:px-10 max-w-7xl mx-auto w-full">
+            <div class="bg-[#1A160D] rounded-2xl border border-primary/20 p-12">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-5xl md:text-6xl font-black text-primary">150+</span>
+                        <span class="text-white font-bold uppercase tracking-wider text-sm">Projects</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-5xl md:text-6xl font-black text-primary">10+</span>
+                        <span class="text-white font-bold uppercase tracking-wider text-sm">Years Experience</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-5xl md:text-6xl font-black text-primary">200+</span>
+                        <span class="text-white font-bold uppercase tracking-wider text-sm">Happy Clients</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-5xl md:text-6xl font-black text-primary">4</span>
+                        <span class="text-white font-bold uppercase tracking-wider text-sm">Service Areas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Where We Operate Section -->
+        <section class="py-24 px-4 md:px-10 max-w-7xl mx-auto w-full">
+            <div class="flex flex-col gap-4 text-center items-center mb-16">
+                <div class="flex items-center gap-2">
+                    <div class="h-1 w-10 bg-primary"></div>
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm">Our Reach</span>
+                    <div class="h-1 w-10 bg-primary"></div>
+                </div>
+                <h2 class="text-slate-900 dark:text-white tracking-tight text-3xl font-black leading-tight md:text-4xl uppercase max-w-2xl">
+                    Where We Operate
+                </h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="flex flex-col items-center justify-center gap-4 bg-[#1A160D] p-8 rounded-xl border border-primary/20 hover:border-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary text-4xl">location_on</span>
+                    <h3 class="text-white text-xl font-bold uppercase">Juba</h3>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-4 bg-[#1A160D] p-8 rounded-xl border border-primary/20 hover:border-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary text-4xl">location_on</span>
+                    <h3 class="text-white text-xl font-bold uppercase">Wau</h3>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-4 bg-[#1A160D] p-8 rounded-xl border border-primary/20 hover:border-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary text-4xl">location_on</span>
+                    <h3 class="text-white text-xl font-bold uppercase">Malakal</h3>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-4 bg-[#1A160D] p-8 rounded-xl border border-primary/20 hover:border-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary text-4xl">location_on</span>
+                    <h3 class="text-white text-xl font-bold uppercase">Aweil</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-24 px-4 md:px-10 max-w-4xl mx-auto w-full">
+            <div class="flex flex-col gap-4 text-center items-center mb-16">
+                <div class="flex items-center gap-2">
+                    <div class="h-1 w-10 bg-primary"></div>
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm">Testimonials</span>
+                    <div class="h-1 w-10 bg-primary"></div>
+                </div>
+                <h2 class="text-slate-900 dark:text-white tracking-tight text-3xl font-black leading-tight md:text-4xl uppercase max-w-2xl">
+                    What Our Clients Say
+                </h2>
+            </div>
+            <div class="bg-[#1A160D] p-10 rounded-2xl border border-primary/20 relative">
+                <div class="flex gap-1 text-primary mb-6">
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                </div>
+                <p class="text-slate-300 text-xl italic mb-8 leading-relaxed">
+                    "Makers Engineering transformed our commercial space. Their attention to detail and commitment to quality is unparalleled in the region. They delivered the project on time and exceeded our expectations."
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xl">
+                        JD
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold uppercase">John Doe</h4>
+                        <span class="text-slate-500 text-sm">CEO, Juba Enterprises</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 px-4 md:px-10 max-w-7xl mx-auto w-full">
+            <div class="bg-[#1A160D] rounded-2xl border border-primary/20 p-12 md:p-20 text-center flex flex-col items-center gap-8">
+                <h2 class="text-white text-4xl md:text-5xl font-black uppercase leading-tight max-w-3xl">
+                    Ready to build your vision? Let's talk.
+                </h2>
+                <a href="./contact.html" class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-10 bg-primary text-black text-lg font-bold leading-normal tracking-wide uppercase hover:scale-105 transition-transform">
+                    <span class="truncate">Contact Us Today</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Recent Projects Section -->
+        <section class="py-24 px-4 md:px-10 max-w-7xl mx-auto w-full">
             <div class="flex justify-between items-end mb-10">
                 <div class="flex flex-col gap-2">
                     <div class="flex items-center gap-2">
@@ -189,14 +357,13 @@
                     View All Projects
                 </a>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[250px]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
                 <div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group cursor-pointer border border-primary/10">
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDiaokrQJh2T_9FMBRLDH1Da_h36MJPgM-pN-BbKRx2Q1zuhiEe6YyIU61D6gv0pDTygJfSrl1pD690qIXEl4Q_ZVh27cBPjq4eniJSj4cCucVXuLufHLdT1L3ACx_5Fa0P5xXQBiqM2VxDgbhe_gVYu9ObCkJWXkc4JcY4BtZEl9asac57-go9VYfPvn3mjt89NzLnuYZ7M29xgT41zrHdpG6g4XV6hqYQFLlQn0h3t9dqsN9L0DyYOr53VGXvx7lBrJb5g3cVn0i')"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                         <span class="text-primary text-sm font-bold tracking-widest uppercase mb-2 block">Commercial</span>
-                        <h3 class="text-white text-2xl md:text-3xl font-bold uppercase mb-2">Juba Financial Center</h3>
-                        <p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity delay-100 max-w-lg">A state-of-the-art 15-story commercial complex featuring sustainable energy systems and premium office spaces.</p>
+                        <h3 class="text-white text-3xl md:text-4xl font-bold uppercase mb-2">Juba Financial Center</h3>
                     </div>
                 </div>
                 <div class="rounded-xl overflow-hidden relative group cursor-pointer border border-primary/10">

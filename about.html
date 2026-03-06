@@ -24,11 +24,11 @@
         }
     </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
+<body class="bg-[#14120A] font-display text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
     
     <!-- Header -->
     <header id="main-header" class="flex flex-wrap items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 md:px-10 py-4 bg-white/5 dark:bg-black/20 backdrop-blur-sm sticky top-0 z-50 w-full transition-all duration-300">
-        <div class="flex items-center gap-4 text-slate-900 dark:text-white">
+        <div class="flex items-center gap-4 text-white">
             <div class="w-6 h-6 text-primary">
                 <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill-rule="evenodd"></path>
@@ -38,52 +38,52 @@
         </div>
         <div class="flex flex-1 justify-end gap-8 items-center mt-4 md:mt-0">
             <nav class="hidden md:flex items-center gap-9">
-                <a href="./index.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Home</a>
-                <a href="./about.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">About Us</a>
-                <a href="./services.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Services</a>
-                <a href="./projects.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Projects</a>
-                <a href="./contact.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Contact</a>
+                <a href="./index.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Home</a>
+                <a href="./about.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">About Us</a>
+                <a href="./services.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Services</a>
+                <a href="./projects.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Projects</a>
+                <a href="./contact.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Contact</a>
             </nav>
             <a href="./contact.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors uppercase">
                 <span class="truncate">Get a Quote</span>
             </a>
-            <button id="mobile-menu-btn" class="md:hidden text-slate-900 dark:text-white">
+            <button id="mobile-menu-btn" class="md:hidden text-white">
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
         </div>
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-black w-full px-4 py-4 border-b border-primary/20 absolute top-[73px] z-40">
+    <div id="mobile-menu" class="hidden md:hidden bg-[#14120A] w-full px-4 py-4 border-b border-primary/20 absolute top-[73px] z-40">
         <nav class="flex flex-col gap-4">
-            <a href="./index.html" class="text-base font-medium text-slate-900 dark:text-white">Home</a>
-            <a href="./about.html" class="text-base font-medium text-slate-900 dark:text-white">About Us</a>
-            <a href="./services.html" class="text-base font-medium text-slate-900 dark:text-white">Services</a>
-            <a href="./projects.html" class="text-base font-medium text-slate-900 dark:text-white">Projects</a>
-            <a href="./contact.html" class="text-base font-medium text-slate-900 dark:text-white">Contact</a>
+            <a href="./index.html" class="text-base font-medium text-white">Home</a>
+            <a href="./about.html" class="text-base font-medium text-white">About Us</a>
+            <a href="./services.html" class="text-base font-medium text-white">Services</a>
+            <a href="./projects.html" class="text-base font-medium text-white">Projects</a>
+            <a href="./contact.html" class="text-base font-medium text-white">Contact</a>
         </nav>
     </div>
 
     <!-- Main Content -->
     <main class="flex-1 w-full flex flex-col">
-        <div class="w-full">
-            <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-slate-200 dark:bg-slate-800 min-h-[300px] relative w-full" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGbjuvMyFfRt-YMv50Z0NhY9xNL-oN4VaQ4da1Vc_b021cBGw_W2JNDrbdMgj6BR1u7e0bjusSwGL9F4ia0Kpcix2WGyoIp6EcmOcb8H-tlwdVdnXExS-bl3mB12UX9Yb65gJYkhimbeEUs4UKrbDNUjdS-6hFluMHtYf2D5Ouwv7capU2kYDGRRQJAFRYbhRApom3u_M4nvTZK6-ZH_tiJ-JRWXGZxTts5u_uOT7TR3hb3SuukV5TEjRCGvBYwE3W-kS-9RLAfgMA')">
-                <div class="flex p-6 md:p-10 relative z-10 w-full"><p class="text-white tracking-tight text-3xl md:text-5xl font-black leading-tight drop-shadow-md">About Us</p></div>
+        <div class="w-full px-4 md:px-10 py-8 max-w-7xl mx-auto">
+            <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-2xl min-h-[400px] relative w-full" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGbjuvMyFfRt-YMv50Z0NhY9xNL-oN4VaQ4da1Vc_b021cBGw_W2JNDrbdMgj6BR1u7e0bjusSwGL9F4ia0Kpcix2WGyoIp6EcmOcb8H-tlwdVdnXExS-bl3mB12UX9Yb65gJYkhimbeEUs4UKrbDNUjdS-6hFluMHtYf2D5Ouwv7capU2kYDGRRQJAFRYbhRApom3u_M4nvTZK6-ZH_tiJ-JRWXGZxTts5u_uOT7TR3hb3SuukV5TEjRCGvBYwE3W-kS-9RLAfgMA')">
+                <div class="flex p-8 md:p-12 relative z-10 w-full"><h1 class="text-white tracking-tight text-4xl md:text-5xl font-black leading-tight drop-shadow-md">About Us</h1></div>
             </div>
         </div>
 
-        <div class="flex flex-wrap gap-2 px-4 md:px-10 py-4 w-full">
-            <a href="./index.html" class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm md:text-base font-medium leading-normal transition-colors">Home</a>
-            <span class="text-slate-400 dark:text-slate-500 text-sm md:text-base font-medium leading-normal">/</span>
+        <div class="flex flex-wrap gap-2 px-4 md:px-10 py-4 w-full max-w-7xl mx-auto">
+            <a href="./index.html" class="text-slate-400 hover:text-primary text-sm md:text-base font-medium leading-normal transition-colors">Home</a>
+            <span class="text-slate-500 text-sm md:text-base font-medium leading-normal">/</span>
             <span class="text-primary text-sm md:text-base font-medium leading-normal">About Us</span>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-10 px-4 md:px-10 py-10 w-full">
+        <div class="flex flex-col lg:flex-row gap-12 px-4 md:px-10 py-16 w-full max-w-7xl mx-auto">
             <div class="flex flex-col gap-6 lg:w-1/2">
-                <h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-3xl md:text-4xl font-black leading-tight">
+                <h2 class="text-white tracking-tight text-3xl md:text-4xl font-black leading-tight">
                     Our Story
-                </h1>
-                <div class="space-y-4 text-slate-700 dark:text-slate-300 text-base md:text-lg font-normal leading-relaxed">
+                </h2>
+                <div class="space-y-6 text-slate-300 text-base md:text-lg font-normal leading-relaxed">
                     <p>
                         Makers Engineering Limited was founded with a bold vision: to redefine the construction and engineering landscape in Juba and across South Sudan. Born from a desire to bridge the gap between ambitious infrastructural needs and world-class execution, we established our roots by committing to uncompromised quality and technical excellence.
                     </p>
@@ -93,51 +93,51 @@
                 </div>
             </div>
             <div class="lg:w-1/2 flex items-center justify-center">
-                <div class="w-full h-full min-h-[300px] bg-center bg-no-repeat bg-cover rounded-xl shadow-lg shadow-primary/10 border border-slate-200 dark:border-primary/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBglC_3JmbovV2YA6PvIZ0VpyPTWi5bVMYRKwZFrdewd0ZPYxKARxLe9Dh2ZgQM3ObYh4aGYvAKAcT_Hx_peRyLKxVM1d0nT4tdHNAyULSXl_zwVceJcXUd1ygkU8aGAyJxnZ2Y0DC-uf7m39o2yW8DljFQMoyOsn-AZ0O8GpNDV9tGfoW3GfVCbR2HpcEhC_qygr_NGSRk5DIeawrFOVNyYp6F_JuTmhabAuuibbUjtqVrTUhvy9t4kSOgbHwuyQ8RdFaiMFqIpNXX')"></div>
+                <div class="w-full aspect-[4/5] bg-center bg-no-repeat bg-cover rounded-xl shadow-lg shadow-black/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBglC_3JmbovV2YA6PvIZ0VpyPTWi5bVMYRKwZFrdewd0ZPYxKARxLe9Dh2ZgQM3ObYh4aGYvAKAcT_Hx_peRyLKxVM1d0nT4tdHNAyULSXl_zwVceJcXUd1ygkU8aGAyJxnZ2Y0DC-uf7m39o2yW8DljFQMoyOsn-AZ0O8GpNDV9tGfoW3GfVCbR2HpcEhC_qygr_NGSRk5DIeawrFOVNyYp6F_JuTmhabAuuibbUjtqVrTUhvy9t4kSOgbHwuyQ8RdFaiMFqIpNXX')"></div>
             </div>
         </div>
 
-        <div class="flex flex-col gap-10 px-4 md:px-10 py-16 w-full bg-slate-50 dark:bg-slate-900/30 border-y border-primary/10">
+        <div class="flex flex-col gap-10 px-4 md:px-10 py-24 w-full bg-[#1A160D] border-y border-primary/10">
             <div class="flex flex-col gap-4 text-center max-w-3xl mx-auto">
-                <h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-3xl md:text-4xl font-black leading-tight">
+                <h2 class="text-white tracking-tight text-3xl md:text-4xl font-black leading-tight">
                     Mission, Vision &amp; Values
-                </h1>
-                <p class="text-slate-600 dark:text-slate-400 text-base md:text-lg font-normal leading-normal">Our core principles that guide every project we undertake and shape our corporate culture.</p>
+                </h2>
+                <p class="text-slate-400 text-base md:text-lg font-normal leading-normal">Our core principles that guide every project we undertake and shape our corporate culture.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-7xl mx-auto">
                 <!-- Mission -->
-                <div class="flex flex-col gap-4 rounded-xl border-2 border-primary/20 hover:border-primary bg-background-light dark:bg-background-dark p-6 transition-all shadow-sm hover:shadow-md hover:shadow-primary/10 group">
-                    <div class="text-primary bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 hover:border-primary bg-[#14120A] p-8 transition-all shadow-lg shadow-black/10 group">
+                    <div class="text-primary bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined text-3xl">target</span>
                     </div>
-                    <div class="flex flex-col gap-2">
-                        <h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight">Mission</h2>
-                        <div class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed">To deliver exceptional construction and engineering services that improve lives, build communities, and drive sustainable development across South Sudan.</div>
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-white text-2xl font-bold leading-tight">Mission</h3>
+                        <p class="text-slate-400 text-base font-normal leading-relaxed">To deliver exceptional construction and engineering services that improve lives, build communities, and drive sustainable development across South Sudan.</p>
                     </div>
                 </div>
                 <!-- Vision -->
-                <div class="flex flex-col gap-4 rounded-xl border-2 border-primary/20 hover:border-primary bg-background-light dark:bg-background-dark p-6 transition-all shadow-sm hover:shadow-md hover:shadow-primary/10 group">
-                    <div class="text-primary bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 hover:border-primary bg-[#14120A] p-8 transition-all shadow-lg shadow-black/10 group">
+                    <div class="text-primary bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined text-3xl">visibility</span>
                     </div>
-                    <div class="flex flex-col gap-2">
-                        <h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight">Vision</h2>
-                        <div class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed">To be the most trusted and innovative construction and engineering company in South Sudan and the East African region.</div>
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-white text-2xl font-bold leading-tight">Vision</h3>
+                        <p class="text-slate-400 text-base font-normal leading-relaxed">To be the most trusted and innovative construction and engineering company in South Sudan and the East African region.</p>
                     </div>
                 </div>
                 <!-- Values -->
-                <div class="flex flex-col gap-4 rounded-xl border-2 border-primary/20 hover:border-primary bg-background-light dark:bg-background-dark p-6 transition-all shadow-sm hover:shadow-md hover:shadow-primary/10 group">
-                    <div class="text-primary bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                <div class="flex flex-col gap-6 rounded-xl border border-primary/20 hover:border-primary bg-[#14120A] p-8 transition-all shadow-lg shadow-black/10 group">
+                    <div class="text-primary bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined text-3xl">diamond</span>
                     </div>
-                    <div class="flex flex-col gap-2">
-                        <h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight">Values</h2>
-                        <div class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed">
-                            <ul class="list-disc pl-5">
-                                <li><strong>Innovation:</strong> Continuously seeking better ways to build.</li>
-                                <li><strong>Integrity:</strong> Honesty and transparency in all dealings.</li>
-                                <li><strong>Collaboration:</strong> Working together for shared success.</li>
-                                <li><strong>Sustainability:</strong> Building for a greener future.</li>
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-white text-2xl font-bold leading-tight">Values</h3>
+                        <div class="text-slate-400 text-base font-normal leading-relaxed">
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li><strong class="text-slate-300">Innovation:</strong> Continuously seeking better ways to build.</li>
+                                <li><strong class="text-slate-300">Integrity:</strong> Honesty and transparency in all dealings.</li>
+                                <li><strong class="text-slate-300">Collaboration:</strong> Working together for shared success.</li>
+                                <li><strong class="text-slate-300">Sustainability:</strong> Building for a greener future.</li>
                             </ul>
                         </div>
                     </div>
@@ -145,76 +145,78 @@
             </div>
         </div>
 
-        <div class="flex flex-col gap-10 px-4 md:px-10 py-16 w-full">
+        <div class="flex flex-col gap-10 px-4 md:px-10 py-24 w-full max-w-7xl mx-auto">
             <div class="flex flex-col gap-4 mb-4">
-                <h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-3xl md:text-4xl font-black leading-tight">
+                <h2 class="text-white tracking-tight text-3xl md:text-4xl font-black leading-tight">
                     Meet Our Team
-                </h1>
-                <p class="text-slate-600 dark:text-slate-400 text-base md:text-lg font-normal leading-normal max-w-2xl">The experienced professionals driving our success and delivering excellence on every site.</p>
+                </h2>
+                <p class="text-slate-400 text-base md:text-lg font-normal leading-normal max-w-2xl">The experienced professionals driving our success and delivering excellence on every site.</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
                 <!-- Team Member 1 -->
                 <div class="flex flex-col group cursor-pointer">
-                    <div class="w-full aspect-[4/5] bg-center bg-cover rounded-xl overflow-hidden relative mb-4" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgte6h-6i_1EaXz5LPzDQsqghqXbNxi4PFnRwEhwhtGhjXpqfQxbYcInoyNBXLWnG3McMykE1I12v_hMVRsZn6pT0FeXIP6Cram91Ge-4Mn8tgASI_xagHhylwj3uJdvy_TPWR9roZI7VuqIIv62hvCitLRkwrgiYCjjyEQLZ9VYOvKX2K7XLKUSkMtkX_qZ51cf1GgnUd3NymORxHh4Xct4MVuEQTR2IXeparFqdWDkaMI2Rr3XgzwysfjOpivGN6rEg8zoZTueAW')">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
-                            <div class="flex gap-3 text-white">
-                                <span class="material-symbols-outlined hover:text-primary transition-colors">mail</span>
-                                <span class="material-symbols-outlined hover:text-primary transition-colors">link</span>
+                    <div class="w-full aspect-[4/5] bg-center bg-cover rounded-xl overflow-hidden relative mb-4 shadow-lg shadow-black/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgte6h-6i_1EaXz5LPzDQsqghqXbNxi4PFnRwEhwhtGhjXpqfQxbYcInoyNBXLWnG3McMykE1I12v_hMVRsZn6pT0FeXIP6Cram91Ge-4Mn8tgASI_xagHhylwj3uJdvy_TPWR9roZI7VuqIIv62hvCitLRkwrgiYCjjyEQLZ9VYOvKX2K7XLKUSkMtkX_qZ51cf1GgnUd3NymORxHh4Xct4MVuEQTR2IXeparFqdWDkaMI2Rr3XgzwysfjOpivGN6rEg8zoZTueAW')">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#14120A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
+                            <div class="flex gap-4 text-white">
+                                <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">mail</span>
+                                <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">link</span>
                             </div>
                         </div>
                     </div>
-                    <h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">John Doe</h3>
-                    <p class="text-primary text-sm font-medium">Managing Director</p>
+                    <h3 class="text-white text-xl font-bold">John Doe</h3>
+                    <p class="text-primary text-sm font-medium mt-1">Managing Director</p>
                 </div>
                 <!-- Team Member 2 -->
                 <div class="flex flex-col group cursor-pointer">
-                    <div class="w-full aspect-[4/5] bg-center bg-cover rounded-xl overflow-hidden relative mb-4" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHLqO5tUAxKwW-3S9NSvUoqTnuEULh-LAr_-KrJk9ZsOJO2pH1lb6LzIlywpvjb-eT5_vngfZXeS-n052uAuw61Gculj-RYN3ylG6wPD8Tv_05eT8xKi1fmZgukPF694IrMPmDbTlSrk2Ym_uJ4pOtxYGgCKQyePEJFJHxUO69CxSAh4i_goqoxDhqxe7OoP1aIz3pmIHFGeqeZ9LUkDwY7geS0nne1zTk_gNpOst7-hogeop7hg05VxuFpGOPr4PO1EbJLpfoPbTa')">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
-                            <div class="flex gap-3 text-white">
-                                <span class="material-symbols-outlined hover:text-primary transition-colors">mail</span>
-                                <span class="material-symbols-outlined hover:text-primary transition-colors">link</span>
+                    <div class="w-full aspect-[4/5] bg-center bg-cover rounded-xl overflow-hidden relative mb-4 shadow-lg shadow-black/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHLqO5tUAxKwW-3S9NSvUoqTnuEULh-LAr_-KrJk9ZsOJO2pH1lb6LzIlywpvjb-eT5_vngfZXeS-n052uAuw61Gculj-RYN3ylG6wPD8Tv_05eT8xKi1fmZgukPF694IrMPmDbTlSrk2Ym_uJ4pOtxYGgCKQyePEJFJHxUO69CxSAh4i_goqoxDhqxe7OoP1aIz3pmIHFGeqeZ9LUkDwY7geS0nne1zTk_gNpOst7-hogeop7hg05VxuFpGOPr4PO1EbJLpfoPbTa')">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#14120A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
+                            <div class="flex gap-4 text-white">
+                                <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">mail</span>
+                                <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">link</span>
                             </div>
                         </div>
                     </div>
-                    <h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Jane Smith</h3>
-                    <p class="text-primary text-sm font-medium">Chief Engineer</p>
+                    <h3 class="text-white text-xl font-bold">Jane Smith</h3>
+                    <p class="text-primary text-sm font-medium mt-1">Chief Engineer</p>
                 </div>
                 <!-- Team Member 3 -->
                 <div class="flex flex-col group cursor-pointer">
-                    <div class="w-full aspect-[4/5] bg-center bg-cover rounded-xl overflow-hidden relative mb-4" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANs9F1PlOFJRj5bExc9T3dTTRXjG2-ZiNsLKDaXq8fmjh38KRZnkimSRfidhl5eoDwmPX_mLGY4t_hdGgdaXll1f0xZOJ7cbL-KFN5GQvLujDnyJ8LkBUOnjP21MoDaCVqQhmngkvXWZMwCq2hMjwrC29wb4ZDL6qZkdfXn6zGZVWfC8zVIyYr8EbYACYZunHhFYSm8C1y-So8aURVSzIVVfg3eYkR2GKYpfWyXuoMtraOjLq8YwjH4UXKjS3PtDOXT7P3LxDEMZVi')">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
-                            <div class="flex gap-3 text-white">
-                                <span class="material-symbols-outlined hover:text-primary transition-colors">mail</span>
-                                <span class="material-symbols-outlined hover:text-primary transition-colors">link</span>
+                    <div class="w-full aspect-[4/5] bg-center bg-cover rounded-xl overflow-hidden relative mb-4 shadow-lg shadow-black/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANs9F1PlOFJRj5bExc9T3dTTRXjG2-ZiNsLKDaXq8fmjh38KRZnkimSRfidhl5eoDwmPX_mLGY4t_hdGgdaXll1f0xZOJ7cbL-KFN5GQvLujDnyJ8LkBUOnjP21MoDaCVqQhmngkvXWZMwCq2hMjwrC29wb4ZDL6qZkdfXn6zGZVWfC8zVIyYr8EbYACYZunHhFYSm8C1y-So8aURVSzIVVfg3eYkR2GKYpfWyXuoMtraOjLq8YwjH4UXKjS3PtDOXT7P3LxDEMZVi')">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#14120A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
+                            <div class="flex gap-4 text-white">
+                                <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">mail</span>
+                                <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">link</span>
                             </div>
                         </div>
                     </div>
-                    <h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Michael Johnson</h3>
-                    <p class="text-primary text-sm font-medium">Operations Manager</p>
+                    <h3 class="text-white text-xl font-bold">Michael Johnson</h3>
+                    <p class="text-primary text-sm font-medium mt-1">Operations Manager</p>
                 </div>
                 <!-- Team Member 4 -->
                 <div class="flex flex-col group cursor-pointer">
-                    <div class="w-full aspect-[4/5] bg-center bg-cover rounded-xl overflow-hidden relative mb-4" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8sPnh0tLjXNC-4Tj8qMSLz0bpQVU0SsQX4S7As9mkRUd6Ol47gs6wWDmCZM0dHQ6WxIg08YbvlzhesFosFHbC7X55uOEyyopUI0SrdVBrlQ4A_nP0X948rNUtkSoVZzYIa2bcYJcVIwnYq7CO69A_vaMh3OGzrVIz7f6yVXbU6UR9vrqzliWfn3ynTN9sKClOJXRa5ifwAWtB4mJFfOFcrkTFtsy8nDoK08et3m3usdyLc9voy7lAvmAIwpYm2TN2neXQCkeVKJBK')">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
-                            <div class="flex gap-3 text-white">
-                                <span class="material-symbols-outlined hover:text-primary transition-colors">mail</span>
-                                <span class="material-symbols-outlined hover:text-primary transition-colors">link</span>
+                    <div class="w-full aspect-[4/5] bg-center bg-cover rounded-xl overflow-hidden relative mb-4 shadow-lg shadow-black/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8sPnh0tLjXNC-4Tj8qMSLz0bpQVU0SsQX4S7As9mkRUd6Ol47gs6wWDmCZM0dHQ6WxIg08YbvlzhesFosFHbC7X55uOEyyopUI0SrdVBrlQ4A_nP0X948rNUtkSoVZzYIa2bcYJcVIwnYq7CO69A_vaMh3OGzrVIz7f6yVXbU6UR9vrqzliWfn3ynTN9sKClOJXRa5ifwAWtB4mJFfOFcrkTFtsy8nDoK08et3m3usdyLc9voy7lAvmAIwpYm2TN2neXQCkeVKJBK')">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#14120A]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
+                            <div class="flex gap-4 text-white">
+                                <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">mail</span>
+                                <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">link</span>
                             </div>
                         </div>
                     </div>
-                    <h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Sarah Williams</h3>
-                    <p class="text-primary text-sm font-medium">Health & Safety Lead</p>
+                    <h3 class="text-white text-xl font-bold">Sarah Williams</h3>
+                    <p class="text-primary text-sm font-medium mt-1">Health & Safety Lead</p>
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col items-center justify-center gap-6 px-4 md:px-10 py-16 w-full bg-slate-100 dark:bg-slate-900 border-y border-slate-200 dark:border-primary/10 text-center">
-            <h2 class="text-slate-900 dark:text-slate-100 tracking-tight text-2xl md:text-3xl font-bold leading-tight">
-                Partner with Makers Engineering for your next project.
-            </h2>
-            <a href="./contact.html" class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary text-slate-900 text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
-                <span class="truncate">Get in Touch</span>
-            </a>
+        <div class="px-4 md:px-10 py-16 w-full max-w-7xl mx-auto mb-16">
+            <div class="flex flex-col items-center justify-center gap-8 p-12 md:p-20 rounded-2xl bg-[#0F172A] text-center shadow-xl shadow-black/20">
+                <h2 class="text-white tracking-tight text-3xl md:text-4xl font-bold leading-tight">
+                    Partner with Makers Engineering for your next project.
+                </h2>
+                <a href="./contact.html" class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-10 bg-primary text-black text-lg font-bold leading-normal tracking-wide hover:scale-105 transition-transform">
+                    <span class="truncate">Get in Touch</span>
+                </a>
+            </div>
         </div>
     </main>
 

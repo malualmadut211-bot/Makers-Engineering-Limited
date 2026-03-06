@@ -24,11 +24,11 @@
         }
     </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
+<body class="bg-[#14120A] font-display text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
     
     <!-- Header -->
     <header id="main-header" class="flex flex-wrap items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 md:px-10 py-4 bg-white/5 dark:bg-black/20 backdrop-blur-sm sticky top-0 z-50 w-full transition-all duration-300">
-        <div class="flex items-center gap-4 text-slate-900 dark:text-white">
+        <div class="flex items-center gap-4 text-white">
             <div class="w-6 h-6 text-primary">
                 <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill-rule="evenodd"></path>
@@ -38,229 +38,178 @@
         </div>
         <div class="flex flex-1 justify-end gap-8 items-center mt-4 md:mt-0">
             <nav class="hidden md:flex items-center gap-9">
-                <a href="./index.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Home</a>
-                <a href="./about.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">About Us</a>
-                <a href="./services.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Services</a>
-                <a href="./projects.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Projects</a>
-                <a href="./contact.html" class="text-sm font-medium leading-normal transition-colors text-slate-600 dark:text-slate-300 hover:text-primary">Contact</a>
+                <a href="./index.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Home</a>
+                <a href="./about.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">About Us</a>
+                <a href="./services.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Services</a>
+                <a href="./projects.html" class="text-sm font-medium leading-normal transition-colors text-slate-300 hover:text-primary">Projects</a>
+                <a href="./contact.html" class="text-sm font-medium leading-normal transition-colors text-primary hover:text-primary">Contact</a>
             </nav>
             <a href="./contact.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors uppercase">
                 <span class="truncate">Get a Quote</span>
             </a>
-            <button id="mobile-menu-btn" class="md:hidden text-slate-900 dark:text-white">
+            <button id="mobile-menu-btn" class="md:hidden text-white">
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
         </div>
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-black w-full px-4 py-4 border-b border-primary/20 absolute top-[73px] z-40">
+    <div id="mobile-menu" class="hidden md:hidden bg-[#14120A] w-full px-4 py-4 border-b border-primary/20 absolute top-[73px] z-40">
         <nav class="flex flex-col gap-4">
-            <a href="./index.html" class="text-base font-medium text-slate-900 dark:text-white">Home</a>
-            <a href="./about.html" class="text-base font-medium text-slate-900 dark:text-white">About Us</a>
-            <a href="./services.html" class="text-base font-medium text-slate-900 dark:text-white">Services</a>
-            <a href="./projects.html" class="text-base font-medium text-slate-900 dark:text-white">Projects</a>
-            <a href="./contact.html" class="text-base font-medium text-slate-900 dark:text-white">Contact</a>
+            <a href="./index.html" class="text-base font-medium text-white">Home</a>
+            <a href="./about.html" class="text-base font-medium text-white">About Us</a>
+            <a href="./services.html" class="text-base font-medium text-white">Services</a>
+            <a href="./projects.html" class="text-base font-medium text-white">Projects</a>
+            <a href="./contact.html" class="text-base font-medium text-primary">Contact</a>
         </nav>
     </div>
 
     <!-- Main Content -->
     <main class="flex-1 w-full flex flex-col">
-        <div class="flex flex-col gap-3 px-4 md:px-10 py-8 mb-4">
-            <div class="flex items-center gap-2 text-sm text-slate-500 mb-2">
-                <a href="./index.html" class="hover:text-primary transition-colors">Home</a>
-                <span>&gt;</span>
-                <span class="text-primary">Contact</span>
+        <div class="flex-1 w-full px-4 md:px-10 py-16 flex flex-col max-w-7xl mx-auto">
+            <div class="flex flex-col gap-4 mb-16">
+                <div class="text-sm text-slate-400 mb-2">
+                    <a href="./index.html" class="hover:text-primary transition-colors">Home</a>
+                    <span class="mx-2">&gt;</span>
+                    <span class="text-primary">Contact</span>
+                </div>
+                <h1 class="text-white text-5xl md:text-6xl font-black leading-tight tracking-tight">Contact Us</h1>
+                <p class="text-slate-400 text-lg font-normal leading-relaxed">
+                    Let's Build Something Great Together
+                </p>
             </div>
-            <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">Contact Us</h1>
-            <p class="text-slate-600 dark:text-slate-400 text-lg font-normal leading-normal max-w-2xl">
-                Let's Build Something Great Together
-            </p>
-        </div>
 
-        <div class="flex flex-col lg:flex-row gap-12 px-4 md:px-10 pb-12">
-            <div class="flex flex-col w-full lg:w-1/3 gap-6">
-                <!-- Contact Info Items -->
-                <div class="flex gap-4 p-4 rounded-xl border border-primary/20 bg-primary/5 dark:bg-primary/10">
-                    <div class="text-primary mt-1">
-                        <span class="material-symbols-outlined text-2xl">location_on</span>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h2 class="text-base font-bold leading-tight">Address</h2>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal whitespace-pre-line">VH5C+QG Juba
+            <div class="flex flex-col lg:flex-row gap-12 pb-16">
+                <div class="flex flex-col w-full lg:w-1/3 gap-6">
+                    <!-- Contact Info Items -->
+                    <div class="flex gap-6 p-6 rounded-2xl border border-primary/20 bg-white/5">
+                        <div class="text-primary mt-1">
+                            <span class="material-symbols-outlined text-3xl">location_on</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-white text-lg font-bold leading-tight">Address</h2>
+                            <p class="text-slate-400 text-sm font-normal leading-relaxed whitespace-pre-line">VH5C+QG Juba
 South Sudan</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-4 p-4 rounded-xl border border-primary/20 bg-primary/5 dark:bg-primary/10">
-                    <div class="text-primary mt-1">
-                        <span class="material-symbols-outlined text-2xl">phone</span>
+                    <div class="flex gap-6 p-6 rounded-2xl border border-primary/20 bg-white/5">
+                        <div class="text-primary mt-1">
+                            <span class="material-symbols-outlined text-3xl">phone</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-white text-lg font-bold leading-tight">Phone</h2>
+                            <p class="text-slate-400 text-sm font-normal leading-relaxed whitespace-pre-line">+211 912 326 171</p>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-1">
-                        <h2 class="text-base font-bold leading-tight">Phone</h2>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal whitespace-pre-line">+211 912 326 171</p>
+                    <div class="flex gap-6 p-6 rounded-2xl border border-primary/20 bg-white/5">
+                        <div class="text-primary mt-1">
+                            <span class="material-symbols-outlined text-3xl">chat</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-white text-lg font-bold leading-tight">WhatsApp</h2>
+                            <p class="text-slate-400 text-sm font-normal leading-relaxed whitespace-pre-line">+211 912 011 180</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-4 p-4 rounded-xl border border-primary/20 bg-primary/5 dark:bg-primary/10">
-                    <div class="text-primary mt-1">
-                        <span class="material-symbols-outlined text-2xl">chat</span>
+                    <div class="flex gap-6 p-6 rounded-2xl border border-primary/20 bg-white/5">
+                        <div class="text-primary mt-1">
+                            <span class="material-symbols-outlined text-3xl">mail</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-white text-lg font-bold leading-tight">Email</h2>
+                            <p class="text-slate-400 text-sm font-normal leading-relaxed whitespace-pre-line">info@makersengineering.com</p>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-1">
-                        <h2 class="text-base font-bold leading-tight">WhatsApp</h2>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal whitespace-pre-line">+211 912 011 180</p>
-                    </div>
-                </div>
-                <div class="flex gap-4 p-4 rounded-xl border border-primary/20 bg-primary/5 dark:bg-primary/10">
-                    <div class="text-primary mt-1">
-                        <span class="material-symbols-outlined text-2xl">mail</span>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h2 class="text-base font-bold leading-tight">Email</h2>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal whitespace-pre-line">info@makersengineering.com</p>
-                    </div>
-                </div>
-                <div class="flex gap-4 p-4 rounded-xl border border-primary/20 bg-primary/5 dark:bg-primary/10">
-                    <div class="text-primary mt-1">
-                        <span class="material-symbols-outlined text-2xl">schedule</span>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h2 class="text-base font-bold leading-tight">Business Hours</h2>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal whitespace-pre-line">Mon - Fri: 8:00 AM - 5:00 PM
+                    <div class="flex gap-6 p-6 rounded-2xl border border-primary/20 bg-white/5">
+                        <div class="text-primary mt-1">
+                            <span class="material-symbols-outlined text-3xl">schedule</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-white text-lg font-bold leading-tight">Business Hours</h2>
+                            <p class="text-slate-400 text-sm font-normal leading-relaxed whitespace-pre-line">Mon - Fri: 8:00 AM - 5:00 PM
 Sat: 9:30 AM - 2:00 PM
 Sun: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 pt-4">
+                        <a href="#" class="text-primary hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-4xl">public</span>
+                        </a>
+                        <a href="#" class="text-primary hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-4xl">share</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="flex gap-4 pt-4">
-                    <a href="#" class="text-primary hover:text-primary/80 transition-colors">
-                        <span class="material-symbols-outlined text-3xl">public</span>
-                    </a>
-                    <a href="#" class="text-primary hover:text-primary/80 transition-colors">
-                        <span class="material-symbols-outlined text-3xl">share</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="flex flex-col w-full lg:w-2/3 rounded-xl border border-primary/20 bg-background-light dark:bg-background-dark p-6 md:p-8 shadow-sm">
-                <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
-                <form class="flex flex-col gap-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex flex-col w-full lg:w-2/3 rounded-2xl border border-primary/20 bg-white/5 p-8 md:p-12">
+                    <h2 class="text-white text-3xl font-bold mb-8">Send us a Message</h2>
+                    <form class="flex flex-col gap-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <label class="flex flex-col flex-1">
+                                <p class="text-sm font-medium leading-normal mb-3 text-slate-300">Full Name</p>
+                                <input type="text" placeholder="Enter your full name" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-white/10 bg-white/5 h-14 placeholder:text-slate-500 p-4 text-base font-normal leading-normal transition-all" />
+                            </label>
+                            <label class="flex flex-col flex-1">
+                                <p class="text-sm font-medium leading-normal mb-3 text-slate-300">Email Address</p>
+                                <input type="email" placeholder="Enter your email address" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-white/10 bg-white/5 h-14 placeholder:text-slate-500 p-4 text-base font-normal leading-normal transition-all" />
+                            </label>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <label class="flex flex-col flex-1">
+                                <p class="text-sm font-medium leading-normal mb-3 text-slate-300">Phone</p>
+                                <input type="tel" placeholder="Enter your phone number" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-white/10 bg-white/5 h-14 placeholder:text-slate-500 p-4 text-base font-normal leading-normal transition-all" />
+                            </label>
+                            <label class="flex flex-col flex-1">
+                                <p class="text-sm font-medium leading-normal mb-3 text-slate-300">Subject</p>
+                                <select class="form-select flex w-full min-w-0 flex-1 overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-white/10 bg-white/5 h-14 p-4 text-base font-normal leading-normal transition-all appearance-none" style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem top 50%; background-size: 0.65rem auto;">
+                                    <option disabled selected value="">Select a service</option>
+                                    <option value="construction" class="bg-[#14120A]">General Construction</option>
+                                    <option value="engineering" class="bg-[#14120A]">Civil Engineering</option>
+                                    <option value="design" class="bg-[#14120A]">Architectural Design</option>
+                                    <option value="consulting" class="bg-[#14120A]">Project Consulting</option>
+                                </select>
+                            </label>
+                        </div>
                         <label class="flex flex-col flex-1">
-                            <p class="text-sm font-medium leading-normal mb-2 text-slate-700 dark:text-slate-300">Full Name</p>
-                            <input type="text" placeholder="Enter your full name" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/20 bg-background-light dark:bg-background-dark h-12 placeholder:text-slate-500 p-3 text-base font-normal leading-normal transition-colors" />
-                        </label>
-                        <label class="flex flex-col flex-1">
-                            <p class="text-sm font-medium leading-normal mb-2 text-slate-700 dark:text-slate-300">Email Address</p>
-                            <input type="email" placeholder="Enter your email address" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/20 bg-background-light dark:bg-background-dark h-12 placeholder:text-slate-500 p-3 text-base font-normal leading-normal transition-colors" />
-                        </label>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <label class="flex flex-col flex-1">
-                            <p class="text-sm font-medium leading-normal mb-2 text-slate-700 dark:text-slate-300">Phone</p>
-                            <input type="tel" placeholder="Enter your phone number" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/20 bg-background-light dark:bg-background-dark h-12 placeholder:text-slate-500 p-3 text-base font-normal leading-normal transition-colors" />
-                        </label>
-                        <label class="flex flex-col flex-1">
-                            <p class="text-sm font-medium leading-normal mb-2 text-slate-700 dark:text-slate-300">Subject</p>
-                            <select class="form-select flex w-full min-w-0 flex-1 overflow-hidden rounded-lg text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/20 bg-background-light dark:bg-background-dark h-12 p-3 text-base font-normal leading-normal transition-colors">
-                                <option disabled selected value="">Select a service</option>
-                                <option value="construction">General Construction</option>
-                                <option value="engineering">Civil Engineering</option>
-                                <option value="design">Architectural Design</option>
-                                <option value="consulting">Project Consulting</option>
+                            <p class="text-sm font-medium leading-normal mb-3 text-slate-300">Project Location</p>
+                            <select class="form-select flex w-full min-w-0 flex-1 overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-white/10 bg-white/5 h-14 p-4 text-base font-normal leading-normal transition-all appearance-none" style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 1rem top 50%; background-size: 0.65rem auto;">
+                                <option disabled selected value="">Select location</option>
+                                <option value="juba" class="bg-[#14120A]">Juba</option>
+                                <option value="wau" class="bg-[#14120A]">Wau</option>
+                                <option value="malakal" class="bg-[#14120A]">Malakal</option>
+                                <option value="aweil" class="bg-[#14120A]">Aweil</option>
+                                <option value="other" class="bg-[#14120A]">Other</option>
                             </select>
                         </label>
-                    </div>
-                    <label class="flex flex-col flex-1">
-                        <p class="text-sm font-medium leading-normal mb-2 text-slate-700 dark:text-slate-300">Project Location</p>
-                        <select class="form-select flex w-full min-w-0 flex-1 overflow-hidden rounded-lg text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/20 bg-background-light dark:bg-background-dark h-12 p-3 text-base font-normal leading-normal transition-colors">
-                            <option disabled selected value="">Select location</option>
-                            <option value="juba">Juba</option>
-                            <option value="wau">Wau</option>
-                            <option value="malakal">Malakal</option>
-                            <option value="aweil">Aweil</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </label>
-                    <label class="flex flex-col flex-1">
-                        <p class="text-sm font-medium leading-normal mb-2 text-slate-700 dark:text-slate-300">Message</p>
-                        <textarea placeholder="Tell us about your project..." class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-1 focus:ring-primary border border-primary/20 bg-background-light dark:bg-background-dark min-h-[120px] placeholder:text-slate-500 p-3 text-base font-normal leading-normal transition-colors"></textarea>
-                    </label>
-                    <button type="button" class="flex items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-background-dark text-base font-bold leading-normal hover:bg-primary/90 transition-colors w-full md:w-auto md:self-start">
-                        Send Message
-                    </button>
-                </form>
+                        <label class="flex flex-col flex-1">
+                            <p class="text-sm font-medium leading-normal mb-3 text-slate-300">Message</p>
+                            <textarea placeholder="Tell us about your project..." class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-white/10 bg-white/5 min-h-[160px] placeholder:text-slate-500 p-4 text-base font-normal leading-normal transition-all"></textarea>
+                        </label>
+                        <button type="button" class="flex items-center justify-center rounded-lg h-14 px-8 bg-primary text-black text-lg font-bold hover:bg-primary/90 transition-colors w-full md:w-auto md:self-start mt-2">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
 
-        <div class="w-full h-[500px] relative">
+        <div class="w-full h-[600px] relative">
             <iframe allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9945037560824!2d31.59341491476142!3d4.838965996485844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x171280b2a829e1f5%3A0x6b47c0b8529d453b!2sJuba%2C%20South%20Sudan!5e0!3m2!1sen!2sus!4v1689234567890!5m2!1sen!2sus" style="border: 0; width: 100%; height: 100%;"></iframe>
         </div>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#050505] border-t border-primary/20 pt-16 pb-8 mt-auto w-full">
-        <div class="w-full px-4 md:px-10">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-                <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-8 h-8 text-primary">
-                            <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                <path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                        <h2 class="text-white text-2xl font-black leading-tight tracking-[-0.015em] uppercase">Makers Engineering</h2>
-                    </div>
-                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
-                        Premium construction and engineering firm delivering excellence across South Sudan. Building the foundation for a stronger tomorrow.
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors" href="#">
-                            <span class="material-symbols-outlined text-sm">public</span>
-                        </a>
-                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors" href="#">
-                            <span class="material-symbols-outlined text-sm">share</span>
-                        </a>
-                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors" href="#">
-                            <span class="material-symbols-outlined text-sm">mail</span>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-white font-bold uppercase mb-6 border-b border-primary/30 inline-block pb-1">Quick Links</h3>
-                    <ul class="flex flex-col gap-3">
-                        <li><a class="text-slate-400 hover:text-primary text-sm transition-colors flex items-center gap-2" href="./about.html"><span class="material-symbols-outlined text-xs">chevron_right</span> About Us</a></li>
-                        <li><a class="text-slate-400 hover:text-primary text-sm transition-colors flex items-center gap-2" href="./services.html"><span class="material-symbols-outlined text-xs">chevron_right</span> Services</a></li>
-                        <li><a class="text-slate-400 hover:text-primary text-sm transition-colors flex items-center gap-2" href="./projects.html"><span class="material-symbols-outlined text-xs">chevron_right</span> Projects</a></li>
-                        <li><a class="text-slate-400 hover:text-primary text-sm transition-colors flex items-center gap-2" href="./contact.html"><span class="material-symbols-outlined text-xs">chevron_right</span> Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-white font-bold uppercase mb-6 border-b border-primary/30 inline-block pb-1">Contact Us</h3>
-                    <ul class="flex flex-col gap-4">
-                        <li class="flex items-start gap-3 text-slate-400 text-sm">
-                            <span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
-                            <span>Makers Tower, 4th Floor<br />Hai Malakal, Juba<br />South Sudan</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-400 text-sm">
-                            <span class="material-symbols-outlined text-primary">phone</span>
-                            <span>+211 912 345 678</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-400 text-sm">
-                            <span class="material-symbols-outlined text-primary">mail</span>
-                            <span>info@makersengineering.com</span>
-                        </li>
-                    </ul>
-                </div>
+    <footer class="bg-[#14120A] border-t border-white/5 pt-12 pb-12 mt-auto w-full">
+        <div class="w-full px-4 md:px-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex gap-12">
+                <a class="text-slate-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+                <a class="text-slate-400 hover:text-white transition-colors" href="#">Terms of Service</a>
+                <a class="text-slate-400 hover:text-white transition-colors" href="./contact.html">Contact Us</a>
             </div>
-            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-slate-500 text-xs text-center md:text-left">
-                    © 2023 Makers Engineering Limited. All rights reserved.
-                </p>
-                <div class="flex gap-4">
-                    <a class="text-slate-500 hover:text-white text-xs transition-colors" href="#">Privacy Policy</a>
-                    <a class="text-slate-500 hover:text-white text-xs transition-colors" href="#">Terms of Service</a>
-                </div>
-            </div>
+            <p class="text-slate-500 text-sm text-center md:text-right">
+                © 2024 Makers Engineering Limited. All rights reserved.
+            </p>
         </div>
     </footer>
 
